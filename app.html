@@ -1,0 +1,46 @@
+<head>
+  <title>Todos DOJO</title>
+</head>
+
+<body>
+  {{> todos}}
+  {{> users}}
+</body>
+
+<template name="todos">
+  <h1>Lance suas tarefas!</h1>
+  <form action="#">
+   <input type="text" class="todo" value="">
+  </form>
+  <ul>
+    {{#each todos}}
+    <li>{{todo}} {{>select_user}}<a class="icon-remove" href="#"></a></li>
+    {{/each}}
+  </ul>
+</template>
+<template name="users">
+  <h1>Adicione pessoas!</h1>
+  <form action="#">
+   <input type="text" class="name" value="">
+  </form>
+  <div class="fluid-row">
+  {{#each users}}
+  <div clas="span2">
+    <div>{{name}}</div>
+    <h3>Todos </h3>
+      <ul>
+        {{#each todos}}
+        <li>{{todo}}</li>
+        {{/each}}
+      </ul>
+  </div>
+  {{/each}}
+  </div>
+</template>
+<template name="select_user">
+<select id="users" value="{{user}}">
+{{#each users}}
+<option value="{{_id}}">{{name}}</option>
+{{/each}}
+</select>
+</template>
