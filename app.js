@@ -25,6 +25,9 @@ if (Meteor.isClient) {
       Users.insert({name:$("input.name").val()});
       $("input.name").val("");
       return false;
+    },
+    'click .icon-remove': function() {
+      Users.remove(this._id);
     }
   });
   Template.todos.events({
