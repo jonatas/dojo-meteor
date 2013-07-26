@@ -5,9 +5,19 @@
 <body>
   {{> todos}}
   {{> users}}
+
+  <footer class="info">
+      <p>
+        Pair Programming com meteor <br>
+        codding: <br>
+        <a href="http://twitter.com/mateusbackweb" target="_blank" title="author Mateus Ortiz"><strong>Mateus Ortiz</strong></a>
+        And
+        <a href="http://twitter.com/jonatasdp" target="_blank" title="author Jônatas Paganini"><strong>Jônatas Paganini</strong></a>
+      </p>
+  </footer>
 </body>
 
-<template name="todos">
+<template name="todos" class="todo">
   <h1>Lance suas tarefas!</h1>
   <form action="#">
    <input type="text" class="todo" value="">
@@ -25,12 +35,12 @@
   </form>
   <div class="fluid-row">
   {{#each users}}<a class="icon-remove" href="#"></a>
-  <div clas="span2">
+  <div class="span2">
     <div>{{name}}</div>
     <h3>Todos </h3>
       <ul>
         {{#each todos}}
-        <li>{{todo}}</li>
+        <li class="todoUser">{{todo}}</li>
         {{/each}}
       </ul>
   </div>
