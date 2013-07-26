@@ -1,1 +1,86 @@
 /* CSS declarations go here */
+
+/*    RESET
+- - - - - - - - - - - */
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent 
+}
+/*    Body Global
+- - - - - - - - - - - */
+body {
+	background: #f1f1f1;
+	font: 12px helvetica, arial;
+}
+h1{
+	right: 200px;
+	color: #999ca1;
+	font: 30px helvetica, arial;
+	text-align: center;
+}
+input {
+	background: #fff;
+	border: 1px solid #dadada;
+	width: 625px;
+	height: 50px;
+	margin: 0 0 25px 0;
+	font: 18px helvetica, arial;
+	color: #999ca1;
+	padding: 0 0 0 10px;
+}
+form{
+	width: 625px;
+	height: 50px;
+	margin: 0 0 25px 0;
+	font: 18px helvetica, arial;
+	color: #3db4b9;
+	padding: 0 0 0 350px;
+}
+li{
+	font-size: 18px helvetica, arial;
+	color: #999ca1;
+	padding: 0 0 0 320px;
+}
+h1, h2, label, p, a, span, form {
+	text-shadow: 2px 2px 2px #fff;
+	-webkit-text-shadow: 2px 2px 2px #fff;
+	-moz-text-shadow: 2px 2px 2px #fff;
+	-o-text-shadow: 2px 2px 2px #fff;
+}
+/*    TodoUser
+- - - - - - - - - - - */
+.todoUser{
+	font: 18px helvetica, arial;
+	color: #999ca1;
+	padding: 0 0 10px;
+}
+/*		Span2
+- - - - - - - - - - - -*/
+.span2{
+	font-size: 18px helvetica, arial;
+	color: #999ca1;
+	padding: 0 0 0 250px;
+}
+/*		Info, h1, p
+- - - - - - - - - - - */
+.info{
+	margin: 150px 0 0 0;
+	text-align: center;
+
+}
+.info p{
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	color: #7f8c8d;
+	text-align: center;
+	font: 15px helvetica, arial;
+}
+.info p a{
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	color: #58c1c7;
+}
