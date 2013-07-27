@@ -70,7 +70,7 @@ h1, h2, label, p, a, span, form {
 /*		Info, h1, p
 - - - - - - - - - - - */
 .info{
-	margin: 150px 0 0 0;
+	margin: 80px 0 0 0;
 	text-align: center;
 
 }
@@ -83,4 +83,8 @@ h1, h2, label, p, a, span, form {
 .info p a{
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	color: #58c1c7;
+}
+.logo{
+	position: relative;
+	margin: 0 0 50px 0; 
 }
