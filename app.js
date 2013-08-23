@@ -11,6 +11,7 @@ if (Meteor.isClient) {
   Template.users.todos = function(){
     return Todos.find({user: this.id});
   }
+  
   Template.users.users =
     Template.select_user.users = function(){
     return Users.find();
