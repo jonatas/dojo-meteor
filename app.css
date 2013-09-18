@@ -1,5 +1,7 @@
 /* CSS declarations go here */
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300|Oswald:400,700);
+
 /*    RESET
 - - - - - - - - - - - */
 * {
@@ -70,21 +72,28 @@ h1, h2, label, p, a, span, form {
 /*		Info, h1, p
 - - - - - - - - - - - */
 .info{
-	margin: 80px 0 0 0;
-	text-align: center;
-
+	background: #ecf0f1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 240px;
+	padding: 10px;
+	box-shadow: 2px 0px 7px -1px #fff;
+	z-index: 10;
 }
-.info p{
-	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+.info p {
+	font-family: 'Oswald', sans-serif !important;
 	color: #7f8c8d;
 	text-align: center;
 	font: 15px helvetica, arial;
 }
-.info p a{
-	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-	color: #58c1c7;
+.info p a {
+	font-weight: bolder;
+	font-family: 'Oswald', sans-serif !important;
+	color: #27ae60;
 }
-.logo{
+.logo {
 	position: relative;
-	margin: 0 0 50px 0; 
+	margin: 0 0 50px 40px;
 }
